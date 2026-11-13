@@ -30,7 +30,7 @@ h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;margin:0}
 .sec.gray{background:var(--gray)}
 .sec h2{font-size:clamp(28px,4vw,40px);font-weight:700;margin-bottom:28px}
 .sec h2.big{font-size:clamp(44px,7vw,72px);color:var(--red)}
-.two{display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
+.two{display:grid;grid-template-columns:1fr 1.7fr;gap:40px}
 .about{list-style:none;margin:0;padding:0;font-size:20px}
 .about li{padding:16px 0;border-top:1px solid var(--line)}
 .about li:last-child{border-bottom:1px solid var(--line)}
@@ -117,6 +117,7 @@ figcaption{font-size:12.5px;color:var(--mut);padding:8px 2px 2px;line-height:1.4
 .contact{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:12px 32px;font-weight:700;font-size:18px}
 .foot .loc{color:#fff;opacity:.9}
 .foot a:focus-visible{outline-color:#fff}
+@media (min-width:1100px){.about li{white-space:nowrap}}
 @media (max-width:900px){
 .two,.split,.block,.hero-grid{grid-template-columns:1fr}
 .photo{max-width:260px;grid-row:1}
