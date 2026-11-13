@@ -42,7 +42,7 @@ h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;margin:0}
 .timeline li::before{content:"";position:absolute;top:-8px;left:0;width:13px;height:13px;border-radius:50%;background:var(--red)}
 .timeline .yr{font-weight:700;color:var(--red-d);font-size:20px}
 .timeline li span:last-child{color:var(--mut)}
-.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.cases{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 .case-card{border:1px solid var(--line);border-top:6px solid var(--red);padding:22px;display:flex;flex-direction:column;gap:14px;background:#fff}
 .case-card>a:first-child{text-decoration:none;display:block}
 .shot{background:var(--red);padding:14px;margin-bottom:16px}
@@ -103,6 +103,7 @@ h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;margin:0}
 .txt strong{color:var(--ink)}
 .figs{background:var(--red);padding:22px;display:grid;gap:22px}
 .figs.solo{max-width:640px;margin:0 0 28px}
+.figs.solo.duo{max-width:none;grid-template-columns:1fr 1fr}
 figure{margin:0;background:#fff;padding:10px}
 figure img{width:100%}
 figcaption{font-size:12.5px;color:var(--mut);padding:8px 2px 2px;line-height:1.4}
@@ -129,7 +130,7 @@ figcaption{font-size:12.5px;color:var(--mut);padding:8px 2px 2px;line-height:1.4
 }
 @media (max-width:560px){
 body{font-size:16px}
-.nums,.metrics,.grid2,.grid4{grid-template-columns:1fr}
+.nums,.metrics,.grid2,.grid4,.figs.solo.duo{grid-template-columns:1fr}
 .timeline{grid-template-columns:1fr 1fr}
 .hero{padding:56px 0}
 .sec{padding:52px 0}
