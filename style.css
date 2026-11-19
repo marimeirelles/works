@@ -55,7 +55,8 @@ h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;margin:0}
 .tags{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0}
 .tags li{font-size:12px;font-weight:700;letter-spacing:.03em;border:1px solid var(--ink);padding:3px 9px;border-radius:99px}
 .mini{margin:0;display:grid;gap:8px;border-top:1px solid var(--line);padding-top:14px}
-.mini div{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:baseline}
+.mini div{display:grid;grid-template-columns:118px 1fr;gap:10px;align-items:baseline}
+.mini dt{white-space:nowrap}
 .mini dt{font-weight:700;color:var(--red-d)}
 .mini dd{margin:0;font-size:13px;color:var(--mut)}
 .btn{margin-top:auto;display:inline-block;align-self:flex-start;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;font-size:15px}
@@ -80,6 +81,7 @@ h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;margin:0}
 .tools th,.tools td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);font-size:16px}
 .tools thead th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--red-d)}
 .case-hero{padding:56px 0 48px}
+.case-hero .btn.live{margin-top:36px}
 .tldr{background:var(--gray);padding:40px 0 44px}
 .tldr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .tldr-grid div{border-top:4px solid var(--red);padding-top:14px}
