@@ -74,6 +74,14 @@ h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;margin:0}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .card{background:#fff;padding:22px;border-top:4px solid var(--red)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card.dec dl{margin:0;display:grid;gap:12px}
+.card.dec dt{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red-d)}
+.card.dec dd{margin:2px 0 0;color:var(--mut);font-size:15px}
+.card.dec h3{font-size:19px;margin-bottom:16px}
+.sol .block.first{border-top:0;padding-top:0}
+.sol .prose p{font-size:18px}
+.h3.sub0{margin-top:0}
 .card.line{border:1px solid var(--line);border-top:4px solid var(--red)}
 .card h3,.card h4{font-size:18px;margin-bottom:10px;letter-spacing:-.01em}
 .card p{margin:0;color:var(--mut);font-size:15.5px}
@@ -131,6 +139,7 @@ figcaption{font-size:12.5px;color:var(--mut);padding:8px 2px 2px;line-height:1.4
 @media (min-width:1100px){.about li{white-space:nowrap}}
 @media (max-width:900px){
 .two,.split,.block,.hero-grid{grid-template-columns:1fr}
+.grid3{grid-template-columns:1fr}
 .photo{max-width:260px;grid-row:1}
 .meta{position:static;grid-template-columns:1fr 1fr}
 .cases{grid-template-columns:1fr}
@@ -141,7 +150,7 @@ figcaption{font-size:12.5px;color:var(--mut);padding:8px 2px 2px;line-height:1.4
 }
 @media (max-width:560px){
 body{font-size:16px}
-.nums,.metrics,.grid2,.grid4,.figs.solo.duo,.tldr-grid{grid-template-columns:1fr}
+.nums,.metrics,.grid2,.grid3,.grid4,.figs.solo.duo,.tldr-grid{grid-template-columns:1fr}
 .logos{grid-template-columns:repeat(2,1fr)}
 .timeline{grid-template-columns:1fr 1fr}
 .hero{padding:56px 0}
