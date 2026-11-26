@@ -1,6 +1,7 @@
 (function () {
   function send(name, params) {
     if (typeof window.gtag === "function") window.gtag("event", name, params);
+    if (typeof window.hj === "function") window.hj("event", name);
   }
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest("a");
